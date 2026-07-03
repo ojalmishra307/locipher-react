@@ -53,6 +53,14 @@ html { scroll-behavior:very smooth; }
     font-family: 'Playfair Display', serif; font-size: 58px; font-weight: 700;
     line-height: 1.1; color: #604734; letter-spacing: -1px; margin-bottom: 20  px;
   }
+
+  .hero-divider {
+  width: 40px;
+  height: 1px;
+  background: rgba(36, 21, 52, 0.25);
+  margin: 14px auto;
+}
+
   .hero-title-italic { font-style: italic; color: #c9848a; }
   .hero-sub {
     font-size: 17px; line-height: 1.7; color: #8a6a58;
@@ -577,6 +585,7 @@ export default function LocipherLanding() {
             Your genes,<br />
             now <span className="hero-title-italic">decoded.</span>
           </h1>
+          <div className="hero-divider"></div>
           <p className="hero-sub">
             Paste any variant from your genetic test report and get a clear, easy to understand explanation - no medical degree required.
           </p>
