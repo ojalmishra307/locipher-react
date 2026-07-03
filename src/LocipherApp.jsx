@@ -38,6 +38,15 @@ body {
   .nav-links { display: flex; align-items: center; gap: 40px; list-style: none; }
   .nav-links a { text-decoration: none; color: #8a6a58; font-size: 14px; font-weight: 400; }
   .nav-links a:hover { color: #604734; }
+  .nav-link-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
   .nav-back {
   background: transparent;
   color: #8a6a58;
@@ -827,7 +836,6 @@ export default function LocipherApp({ onBack, onAbout }) {
   const [query, setQuery] = useState('');
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
-  const [rawData, setRawData] = useState(null);
   const [error, setError] = useState(null);
   const [chatMessages, setChatMessages] = useState([]);
   const [chatInput, setChatInput] = useState("");
@@ -882,9 +890,7 @@ export default function LocipherApp({ onBack, onAbout }) {
       const variant = cleanVariant.split(' ').slice(1).join(' ');
       searchTerms.push(`${gene}[gene] AND ${variant}`);
     }
-    
-    let bestRecord = null;
-    let bestRank = 999;
+  
     let allRecords = [];
     
     // Try each search strategy
@@ -1391,7 +1397,19 @@ https://locipher.vercel.app`;
           <span className="logo-wordmark">locipher</span>
         </Link>
         <ul className="nav-links">
-          <li><a href="/#how" onClick={(e) => { e.preventDefault(); onBack(); setTimeout(() => { document.getElementById('how')?.scrollIntoView({ behavior: 'smooth' }); }, 500); }}>How It Works</a></li>
+         <li>
+  <button
+    className="nav-link-btn"
+    onClick={() => {
+      onBack();
+      setTimeout(() => {
+        document.getElementById("how")?.scrollIntoView({ behavior: "smooth" });
+      }, 500);
+    }}
+  >
+    How It Works
+  </button>
+</li>
           <li><Link to="/about">About</Link></li>
         </ul>
         <Link className="nav-back" to="/">
