@@ -51,7 +51,7 @@ export default function LoadingScreen({ onComplete }) {
             alignItems: "center",
             textAlign: "center",
             gap: isMobile ? "12px" : "11px",
-            transform: isMobile ? "translateY(-10px)" : "none",
+            transform: isMobile ? "translateY(-5px)" : "none",
             zIndex: 99999,
             overflow: "hidden"
           }}
