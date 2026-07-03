@@ -1302,7 +1302,6 @@ If appropriate, remind the user to discuss important concerns with their doctor.
         setLoading(false); 
         return; 
       }
-      setRawData(variantData);
       const explanation = await callGroq(variantData, v);
       const parsed = parseExplanation(explanation);
       const concern = getConcernLevel(parsed.concern + ' ' + variantData.clinical_significance);
