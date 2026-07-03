@@ -552,12 +552,6 @@ body {
   align-self: flex-start !important;
   margin-left: 0 !important;
 }
-  .footer{
-padding:32px 22px;
-flex-direction:column;
-gap:16px;
-text-align:center;
-}
 
 .result-badges {
   justify-content: flex-start !important;
@@ -1644,11 +1638,6 @@ https://locipher.vercel.app`;
   Locipher is for educational purposes only and does not constitute medical advice.
   Always consult a qualified genetic counselor or physician regarding your results.
 </p>
- <footer style={{ background: '#2a1f1a', padding: '60.2px 64px', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '8px' }}>
-  <span style={{ fontFamily: 'Playfair Display, serif', fontSize: '16px', fontWeight: 700, fontStyle: 'italic', color: '#fcf7d9' }}>locipher</span>
-  <span style={{ color: 'rgba(252,247,217,0.2)' }}>·</span>
-  <span style={{ fontSize: '12px', color: 'rgba(252,247,217,0.4)' }}>locipher.vercel.app · Built by Ojal Mishra · Powered by ClinVar + Groq AI · © 2026 · For educational purposes only.</span>
-</footer>
     </motion.div>
     
   );
