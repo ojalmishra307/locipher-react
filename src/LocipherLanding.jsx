@@ -557,10 +557,10 @@ export default function LocipherLanding() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
       >
-        <a href="#" className="nav-logo">
-          <Logo />
-          <span className="logo-wordmark">locipher</span>
-        </a>
+        <Link to="/" className="nav-logo">
+  <Logo />
+  <span className="logo-wordmark">locipher</span>
+</Link>
         <ul className="nav-links">
           <li><a href="#how">How It Works</a></li>
           <li><a href="#assistant">AI Assistant</a></li>
