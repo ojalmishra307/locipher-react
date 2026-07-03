@@ -642,7 +642,7 @@ const Logo = () => (
   </svg>
 );
 
-const GROQ_API_KEY =process.env.REACT_APP_GROQ_API_KEY;
+const GROQ_API_KEY = process.env.REACT_APP_GROQ_API_KEY;
 const exampleVariants = ["BRCA1 c.5266dupC", "TP53 R175H", "CFTR F508del", "APOE e4"];
 
 // Define priority mapping once at the top level
