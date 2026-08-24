@@ -1182,7 +1182,7 @@ Write naturally, warmly, and clearly. Use simple language. Avoid fear-inducing l
         'Authorization': `Bearer ${GROQ_API_KEY}`,
       },
       body: JSON.stringify({
-        model: 'qwen/qwen3.6-27b',
+        model: 'llama3-8b-8192',
         messages: [{ role: 'user', content: prompt }],
         max_tokens: 1024,
         temperature: 0.5,
@@ -1245,7 +1245,7 @@ If appropriate, remind the user to discuss important concerns with their doctor.
             Authorization: `Bearer ${GROQ_API_KEY}`
           },
           body: JSON.stringify({
-            model: 'qwen/qwen3.6-27b',
+            model: 'llama3-8b-8192',
             messages,
             temperature: 0.4,
             max_tokens: 600
